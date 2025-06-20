@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  whisper-api:
+    image: yaseer/whisper-api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      WHISPER_DEVICE: cpu
+      WORKER_COUNT: 4
+    volumes:
+      - ./app_cache:/app/.cache/huggingface
+    restart: unless-stopped
