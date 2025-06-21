@@ -70,3 +70,4 @@ Dockerfile
 # Ignore uploaded audio or output folders if you have them
 uploads/
 output/
+activate_venv.bat

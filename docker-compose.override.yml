@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  whisper-api:
+    ports:
+      - "8000:80"
+    env_file:
+      - .env.development
+    volumes:
+      - ./app_cache:/app/.cache/huggingface
+      - ./main.py:/app/main.py:ro
+    restart: unless-stopped
