@@ -31,7 +31,7 @@ pydantic_core==2.33.2
 pydub==0.25.1
 Pygments==2.19.1
 python-dotenv==1.1.0
-python-multipart==0.0.9
+python-multipart==0.0.18
 PyYAML==6.0.2
 regex==2024.11.6
 requests==2.32.4
